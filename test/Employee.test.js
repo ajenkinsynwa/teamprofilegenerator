@@ -1,24 +1,24 @@
-const Employee = require("../lib/Employee");
-const employee = new Employee('emily', '987654', 'emilyann08@gmail.com');
+const Employee = require('../lib/Employee');
+const employee = new Employee('emily', '5768098', 'emilychat@gmail.com');
 
-test('test the name, id, email for the emloyee object', () => {
-    describe(employee.name).toBe('emily');
-    describe(employee.id).toBe('987654');
-    describe(emloyee.email).toBe('emilyann08@gmail.com')
+test('test if we can get the constructor values for the employee object', () => {
+    expect(employee.name).toBe('emily');
+    expect(employee.id).toBe('5768098');
+    expect(employee.email).toBe('emilychat@gmail.com');
 });
 
-test('test to get the name of employee from the getName() method', () => {
-    describe(employee.getName()).toBe('emily');
+test('test if we can get the name from the getName() method', () => {
+    expect(employee.getName()).toBe('emily');
 });
 
 test('test if we can get the id from the getId() method', () => {
-    describe(employee.getId()).toBe('987654');
+    expect(employee.getId()).toBe('5768098');
 });
 
-test('test if we can get the email from the getemail() method', () => {
-    describe(employee.getEmail()).toBe('emilyann08@gmail.com');
+test('test if we can get the email from the getEmail() method', () => {
+    expect(employee.getEmail()).toBe('emilychat@gmail.com');
 });
 
-test('test if we can get the role from the getrole() method', () => {
-    describe(employee.getrole()).toBe('Employee');
+test('test if we can get the role from the getRole() method', () => {
+    expect(employee.getRole()).toBe('Employee');
 });
