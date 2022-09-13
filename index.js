@@ -19,7 +19,7 @@ const promptManager = () => {
                 if (nameInput) {
                     return true;
                 } else {
-                    console.log('Please enter your name!');
+                    console.log('Please enter your name.');
                     return false;
                 }
             }
@@ -27,12 +27,12 @@ const promptManager = () => {
         {
             type: 'input',
             name: 'employeeId',
-            message: 'Enter your employee ID (Required)',
+            message: 'Enter your employee ID',
             validate: employeeId => {
                 if (employeeId) {
                     return true;
                 } else {
-                    console.log('Please enter your employee ID!');
+                    console.log('Please enter your employee ID');
                     return false;
                 }
             }
@@ -40,7 +40,7 @@ const promptManager = () => {
         {
             type: 'input',
             name: 'email',
-            message: 'Enter your email address (Required)',
+            message: 'Enter your email address.',
             validate: email => {
                 if (email) {
                     return true;
@@ -53,12 +53,12 @@ const promptManager = () => {
         {
             type: 'input',
             name: 'officeNumber',
-            message: 'Enter your office number (Required)',
+            message: 'Enter your office number.',
             validate: officeNumber => {
                 if (officeNumber) {
                     return true;
                 } else {
-                    console.log('Please enter your office number!');
+                    console.log('Please enter your office number.');
                     return false;
                 }
             }
@@ -95,9 +95,7 @@ const promptMenu = () => {
 
 const promptEngineer = () => {
     console.log(`
-    ===============
-    Add a New Engineer
-    ===============
+  
     `);
 
     return inquirer.prompt([
@@ -163,9 +161,7 @@ const promptEngineer = () => {
 
 const promptIntern = () => {
     console.log(`
-    ===============
-    Add a New Intern
-    ===============
+  
     `);
 
     return inquirer.prompt([
@@ -231,12 +227,10 @@ const promptIntern = () => {
 
 const buildTeam = () => {
     console.log(`
-    ===============
-    Finished building my team!
-    ===============
+  
     `);
 
-    // Create the output directory if the output path doesn't exist
+    
     if (!fs.existsSync(OUTPUT_DIR)) {
         fs.mkdirSync(OUTPUT_DIR)
     }

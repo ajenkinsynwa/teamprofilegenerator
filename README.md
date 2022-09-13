@@ -5,6 +5,7 @@ This application allows the user to create a list of employees with their inform
 
 # Test Visuals 
 To ensure this application works we used JEST to test 
+
 ![Jest Test".](/images/test2.png)
 
 
