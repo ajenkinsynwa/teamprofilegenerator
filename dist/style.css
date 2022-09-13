@@ -7,6 +7,12 @@
   
 }
 
+.image {
+    background-image: url("/images/pic.jpg");
+    display: border-box;
+   
+}
+
 header {
     color: white;
     background-color: rgba(55, 16, 16, 0.591);
